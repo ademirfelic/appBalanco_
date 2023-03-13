@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyzbar
+Version: 0.1.7
+Summary: Read one-dimensional barcodes and QR codes from Python 2 and 3.
+Home-page: https://github.com/NaturalHistoryMuseum/pyzbar/
+Author: Lawrence Hudson
+Author-email: quicklizard@googlemail.com
+License: MIT
+Description: Visit https://github.com/NaturalHistoryMuseum/pyzbar/ for more details.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: scripts

@@ -1,0 +1,8 @@
+certifi
+chardet
+idna
+kivy-garden.xcamera
+kivy-garden.zbarcam
+requests
+urllib3
+xcamera

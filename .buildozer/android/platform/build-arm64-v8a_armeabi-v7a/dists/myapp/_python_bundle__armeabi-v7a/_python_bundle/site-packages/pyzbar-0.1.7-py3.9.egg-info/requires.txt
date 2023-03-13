@@ -1,0 +1,7 @@
+
+[:python_version=="2.7"]
+enum34>=1.1.6
+pathlib>=1.0.1
+
+[scripts]
+Pillow>=3.2.0

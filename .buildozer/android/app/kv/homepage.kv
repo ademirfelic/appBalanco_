@@ -1,0 +1,61 @@
+<HomePage>:
+    FloatLayout:
+        LabelButton:
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                    source: 'icones/botao.png' if self.state =='normal' else 'icones/botao_apertado.png'
+            on_release: app.carregar_lista_referencias()
+            text:'Incluir'
+            pos_hint: {'right':0.79, 'top':1}
+            size_hint: 0.2 , 0.2
+        ImageButton:
+            source:'icones/camera.png'
+            on_release:app.mudar_tela('camerapage')
+            pos_hint: {'right':0.95, 'top':0.95}
+            size_hint: 0.1 , 0.1
+
+        TextInput:
+            id: referencia
+            hint_text: 'Referencia'
+            pos_hint:{'right': 0.55,'top':0.95}
+            size_hint: 0.54 , 0.1
+            font_size:20
+            input_type:'number'
+
+        ScrollView:
+            pos_hint:{'right': 1, 'top':0.75}
+            size_hint: 1, 0.63
+            GridLayout:
+                cols: 1
+                id:lista_referencias
+                size_hint_y: None
+                spacing: 2, 2
+                height: self.minimum_height
+                row_default_height:'90dp'
+                row_force_default:True
+
+        GridLayout:
+            rows:1
+            pos_hint:{'right': 1,'top': 0.12}
+            size_hint: 1, 0.12
+            canvas:
+                Color:
+                    rgb:utils.get_color_from_hex('#006D7E')
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            ImageButton:
+                source:'icones/excluir.png'
+                on_release:app.excluir_todos()
+            ImageButton:
+                source:'icones/upload.png'
+                on_release:app.enviar_coleta()
+            Label:
+                id: quantidade
+                text: 'Qnt.: [color=#000000]0[/color]'
+                bold: True
+                markup:True
+
+

@@ -1,0 +1,12 @@
+prefix=/home/ademir/PycharmProjects/appBalanco_/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/myapp/arm64-v8a
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: zbar-qt
+Description: bar code scanning and decoding Qt4 widget
+URL: http://zbar.sourceforge.net
+Version: 0.10
+Requires: zbar, QtCore >= 4, QtGui >= 4
+Libs: -L${libdir} -lzbarqt
+Cflags: -I${includedir}
